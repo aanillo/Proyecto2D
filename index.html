@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VERDELO</title>
-    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/x-icon" href="img/logo.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .bg-dark-green { background-color: #02210D !important; } /* Color más oscuro */
+        .bg-dark-green { background-color: #02210D !important; } 
         .btn-dark-green { background-color: #02210D !important; border-color: #02210D !important; }
+        body {
+            background: url('/img/fondo.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
-    <header class="bg-dark-green text-white text-center py-4">
-        <img src="/img/logo.jpg" alt="logotipo del videojuego" width="200px">
-        <h1>VERDELO</h1>
-        <p>El justiciero de la ciudad</p>
+    <header class="bg-dark-green text-white text-center py-4 d-flex align-items-center justify-content-center">
+        <img src="/img/logo.jpg" alt="logotipo del videojuego" width="200px" class="me-3"> 
+        <div>
+            <h1>VERDELO</h1>
+            <h2>El justiciero de la ciudad</h2>
+        </div>
     </header>
+    
     <main class="container mt-4">
+        <br>
         <section class="row">
             <article class="col-md-6 mb-4">
                 <div class="card">
@@ -39,11 +51,12 @@
                         <p>Lucha contra los oponentes y libera a la ciudad de todo aquel que intente estropearla o ensuciarla.</p>
                     </div>
                 </div>
-                <div class="text-center mt-3">
-                    <button class="btn btn-dark-green btn-lg d-block mx-auto text-white">Jugar ahora</button>
-                </div>
             </article>
         </section>
+        <div class="text-center mt-3">
+            <button class="btn btn-dark-green btn-lg d-block mx-auto text-white">Jugar ahora</button>
+            <br>
+        </div>
     </main>
     <footer class="bg-dark-green text-white py-4 text-center">
         <h1>VERDELO</h1>
